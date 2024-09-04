@@ -1,0 +1,22 @@
+{
+  "name": "playwright_automation_2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "googleSearch": "npx playwright test src/test/GoogleSearch.spec.ts --headed --project=chrome --workers=1 --reporter=html",
+
+    "smokeSuite": "npx playwright test --grep @smoke src/test/* --headed --project=chrome --project=chrome --workers=1 --reporter=html",
+    "googleSearchLoop": "npx playwright test src/test/googleSearchLoop.spec.ts --headed --project=chrome --project=firefox --workers=1 --reporter=html",
+    "POMGoogle": "npx playwright test src/test/POMGoogle.spec.ts --headed --project=chrome --workers=1 --reporter=html",
+    "GOOGLECH": "npx playwright test src/test/GOOGLECH.spec.ts --headed --project=chrome --workers=1 --reporter=html",
+    "showReport": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.9.0"
+  }
+}
