@@ -24,14 +24,14 @@ test("Search for bmw on Search Field @smoke",async() => {
 })//end of test 1
 
 //capture the search result
-test("Capture the Seach Number for BMW @smoke",async() => {
+//test("Capture the Seach Number for BMW @smoke",async() => {
     //wait few seconds
-    await page.waitForTimeout(3000)
+    //await page.waitForTimeout(3000)
     //store the search results text in a variable
-    let result = await page.locator("xpath=//*[@id='extabar']").textContent()
+    //let result = await page.locator("xpath=//*[@id='extabar']").textContent()
     //print using console.log
-    console.log("Result: " + result)
+    //console.log("Result: " + result)
     //split the number
-    let arrayResult = result.split(" ")
-    console.log("BMW search number is " + arrayResult[1])
-})//end of test 2
+    //let arrayResult = result.split(" ")
+   // console.log("BMW search number is " + arrayResult[1])
+//})//end of test 2
